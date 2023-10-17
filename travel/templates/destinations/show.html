@@ -44,14 +44,6 @@
         <h2>Comments</h1>  
       </div>  
     </div>  
-    
-    {% comment %} <form action="{{ url_for('destination.delete', id=destination.id) }}" method="post"> {% endcomment %}
-      {% comment %} <button type="submit" class="btn btn-danger">Delete Destination</button> {% endcomment %}
-    {% comment %} </form> {% endcomment %}
-  
-
-
-
     <div class="row border-bottom"> 
       {{ render_form(form,"/destinations/{0}/comment".format(destination.id)) }}
       
